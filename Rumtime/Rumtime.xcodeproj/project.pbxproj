@@ -25,6 +25,9 @@
 		5633F8BC1D6D2D5200F205CF /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633F8BB1D6D2D5200F205CF /* Fruit.m */; };
 		5633F8BD1D6D2D5200F205CF /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633F8BB1D6D2D5200F205CF /* Fruit.m */; };
 		5633F8BE1D6D2D5200F205CF /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633F8BB1D6D2D5200F205CF /* Fruit.m */; };
+		5633F8C11D6D4E9200F205CF /* ArchivedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633F8C01D6D4E9200F205CF /* ArchivedObject.m */; };
+		5633F8C21D6D4E9200F205CF /* ArchivedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633F8C01D6D4E9200F205CF /* ArchivedObject.m */; };
+		5633F8C31D6D4E9200F205CF /* ArchivedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633F8C01D6D4E9200F205CF /* ArchivedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,8 @@
 		5633F8B61D6D2A3D00F205CF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		5633F8BA1D6D2D5200F205CF /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
 		5633F8BB1D6D2D5200F205CF /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
+		5633F8BF1D6D4E9200F205CF /* ArchivedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchivedObject.h; sourceTree = "<group>"; };
+		5633F8C01D6D4E9200F205CF /* ArchivedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchivedObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +131,8 @@
 				5633F8BA1D6D2D5200F205CF /* Fruit.h */,
 				5633F8BB1D6D2D5200F205CF /* Fruit.m */,
 				5633F8B51D6D2A3D00F205CF /* Person.h */,
+				5633F8BF1D6D4E9200F205CF /* ArchivedObject.h */,
+				5633F8C01D6D4E9200F205CF /* ArchivedObject.m */,
 				5633F8B61D6D2A3D00F205CF /* Person.m */,
 				5633F8821D6D289700F205CF /* Main.storyboard */,
 				5633F8881D6D289700F205CF /* Assets.xcassets */,
@@ -302,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5633F8C11D6D4E9200F205CF /* ArchivedObject.m in Sources */,
 				5633F8BC1D6D2D5200F205CF /* Fruit.m in Sources */,
 				5633F8B71D6D2A3D00F205CF /* Person.m in Sources */,
 				5633F8811D6D289700F205CF /* ViewController.m in Sources */,
@@ -318,6 +326,7 @@
 			files = (
 				5633F8BD1D6D2D5200F205CF /* Fruit.m in Sources */,
 				5633F8B81D6D2A3D00F205CF /* Person.m in Sources */,
+				5633F8C21D6D4E9200F205CF /* ArchivedObject.m in Sources */,
 				5633F8B31D6D296B00F205CF /* RuntimeTool.m in Sources */,
 				5633F8971D6D289700F205CF /* RumtimeTests.m in Sources */,
 			);
@@ -329,6 +338,7 @@
 			files = (
 				5633F8BE1D6D2D5200F205CF /* Fruit.m in Sources */,
 				5633F8B91D6D2A3D00F205CF /* Person.m in Sources */,
+				5633F8C31D6D4E9200F205CF /* ArchivedObject.m in Sources */,
 				5633F8B41D6D296B00F205CF /* RuntimeTool.m in Sources */,
 				5633F8A21D6D289700F205CF /* RumtimeUITests.m in Sources */,
 			);

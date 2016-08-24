@@ -11,6 +11,7 @@
 #import "Fruit.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import "ArchivedObject.h"
 
 @interface ViewController ()
 
@@ -220,9 +221,44 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+
+    NSLog(@"touchsBegan-------");
+    ArchivedObject *object = [[ArchivedObject alloc] init];
+    object.age = 40;
+    object.name = @"jack";
+    object.height = 100.0;
+    
+    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *fileName = [filePath stringByAppendingPathComponent:@"archive.plist"];
+
+    [NSKeyedArchiver archiveRootObject:object toFile:fileName];
+}
+
+
+- (IBAction)archiver:(UIButton *)sender {
+    
+    ArchivedObject *object = [[ArchivedObject alloc] init];
+    object.age = 40;
+    object.name = @"jack";
+    object.height = 100.0;
+    
+    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *fileName = [filePath stringByAppendingPathComponent:@"archive.plist"];
+    
+    [NSKeyedArchiver archiveRootObject:object toFile:fileName];
+    
+}
+
+- (IBAction)unarchiver:(id)sender {
+    
+    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *fileName = [filePath stringByAppendingPathComponent:@"archive.plist"];
+    
+    ArchivedObject *object = [NSKeyedUnarchiver unarchiveObjectWithFile:fileName];
+    
+    NSLog(@"%d---%@----%f", object.age, object.name, object.height);
+    
 }
 
 @end
