@@ -25,6 +25,8 @@
     self.view.backgroundColor = [UIColor grayColor];
     
     
+//    change and test
+    
 //******** 1、类真是存在，结果返回类名； 2、类不是真实存在，返回nil；
     const char *className = class_getName([Person class]);
     NSLog(@"%s", className); // Person
